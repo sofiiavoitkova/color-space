@@ -18,12 +18,25 @@ body, html {
     height: 200px; 
 }
 
+@keyframes grow {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+
 .circle {
     position: absolute;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
+
+.circle:active {
+    animation: grow 0.5s;
+  }
 
 #black { 
     width: 120%; 
