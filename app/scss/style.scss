@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.circles {
+    position: relative;
+    width: 200px;
+    height: 200px; 
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#black { 
+    width: 120%; 
+    height: 120%; 
+    background-color: #000000; 
+    top: 40%; 
+    left: 40%;
+    z-index: 1;
+}
+
+#blue { 
+    width: 90%; 
+    height: 90%; 
+    background-color: #0000ff; 
+    top: 40%; 
+    left: 40%;
+    z-index: 2;
+}
+
+#red { 
+    width: 60%; 
+    height: 60%; 
+    background-color: #ff0000; 
+    top: 40%; 
+    left: 40%;
+    z-index: 3;
+}
+
+#yellow { 
+    width: 30%; 
+    height: 30%; 
+    background-color: #ffff00; 
+    top: 40%; 
+    left: 40%;
+    z-index: 4;
+}
+
+@media (max-width: 500px) {
+    .circles {
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+
+.colors {
+    margin-top: 200px;
+    text-align: center;
+
+    .value {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+  }
